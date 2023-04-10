@@ -1,14 +1,18 @@
 {
+  "homepage": "https://github.com/regulon/Comision-23301-ejercicioClase08",
   "name": "my-video-input-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "next": "13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
